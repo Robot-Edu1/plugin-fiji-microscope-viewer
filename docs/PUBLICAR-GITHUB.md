@@ -6,7 +6,7 @@ Pruebas remotas: https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/act
 
 Esta guía conserva los pasos de creación inicial como referencia. Para nuevas contribuciones se debe clonar el repositorio existente, no iniciar otro historial. Comprobar que la Release sea pública y descargable antes de anunciar una versión.
 
-Nombre del repositorio: `plugin-fiji-microscope-viewer`. Versión inicial de esta revisión: `1.1.1`. La versión 1.1.0 anterior fue una entrega ZIP; no se reutiliza su número para cambiar archivos ya enviados.
+Nombre del repositorio: `plugin-fiji-microscope-viewer`. Versión inicial de esta revisión: `1.1.2`. La versión 1.1.0 anterior fue una entrega ZIP; no se reutiliza su número para cambiar archivos ya enviados.
 
 ## Primera publicación desde este ordenador
 
@@ -26,7 +26,7 @@ El repositorio local ya contiene el primer commit y una etiqueta local de esta p
 git init -b main
 git add .
 git -c user.name="Rafael Cantillana" -c user.email="info@robot-edu.es" commit -m "Preparar plugin independiente para publicación"
-git tag -a v1.1.1 -m "Microscopio Color 1.1.1"
+git tag -a v1.1.2 -m "Microscopio Color 1.1.2"
 ```
 
 Antes de etiquetar o subir, revisar que se aprueba el contenido. Un tag no se debe mover para cambiar una versión distribuida; emitir otra versión.
@@ -37,7 +37,7 @@ Antes de etiquetar o subir, revisar que se aprueba el contenido. Un tag no se de
 2. Enviar la etiqueta:
 
 ```sh
-git push origin v1.1.1
+git push origin v1.1.2
 ```
 
 3. El workflow **Prepare tagged release** vuelve a probar y crea un **borrador** con JAR, fuentes `.tar.gz` y SHA-256. Requiere GitHub Actions habilitado y permiso de escritura de contenido para ese job.
@@ -52,7 +52,7 @@ Los borradores no son visibles para el público ni sirven todavía para `uscan`.
 La compilación sigue siendo local y sin red si se aporta `IJ_JAR`. Desde un commit limpio con el tag correcto:
 
 ```sh
-IJ_JAR=/ruta/al/ij.jar python3 tools/release.py --tag v1.1.1
+IJ_JAR=/ruta/al/ij.jar python3 tools/release.py --tag v1.1.2
 ```
 
 La herramienta ejecuta los tests y genera `release/`. En GitHub, crear una Release desde ese mismo tag, adjuntar JAR, tarball y SHA256SUMS.txt, revisar y publicar. La publicación manual es una alternativa; no cambia el procedimiento de versionado ni exige reenviar ZIP por correo.

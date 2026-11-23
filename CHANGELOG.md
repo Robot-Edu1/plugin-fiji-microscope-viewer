@@ -1,5 +1,12 @@
 # Historial de cambios
 
+## 1.1.2 — 2026-11-23
+
+- Corrección del sondeo inicial de FFmpeg al grabar RGB por tubería. Las primeras pruebas remotas detectaron un vídeo más corto que el tiempo de envío; se desactiva la inferencia inicial de tasa y se limita el sondeo porque el formato ya está definido. Se mantiene la prueba de duración, sin relajar su umbral.
+- Actualizadas las acciones de GitHub a las revisiones v5 con Node.js 24.
+- 1.1.1 permanece como etiqueta histórica: no se publicó una Release porque la comprobación Java 11 falló.
+
+
 ## 1.1.1 — 2026-11-23
 
 Revisión de publicación del plugin independiente 1.1.0. No cambia la resolución ni añade compatibilidad física acreditada.

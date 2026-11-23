@@ -84,7 +84,7 @@ final class UserStorage {
     }
     Files.writeString(
         Paths.get(target + ".txt"),
-        "Microscopio Color 1.1.1\nCaptura RGB: 1280x720\nInterpolación: ninguna\nFecha: "
+        "Microscopio Color 1.1.2\nCaptura RGB: 1280x720\nInterpolación: ninguna\nFecha: "
             + OffsetDateTime.now()
             + "\n",
         StandardOpenOption.CREATE_NEW);

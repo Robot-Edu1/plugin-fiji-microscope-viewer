@@ -32,6 +32,9 @@ final class VideoRecorder extends Thread {
     storage.checkSpace();
     target = storage.next("video-1280x720", ".mp4");
     Path log = Files.createFile(Paths.get(target + ".log"));
+    // El formato y el tamaño ya se conocen: no hay que acumular fotogramas para
+    // inferirlos. El sondeo inicial retrasa la lectura y comprime el tiempo del vídeo
+    // cuando las marcas de tiempo se asignan al recibir datos desde la tubería.
     process =
         new ProcessBuilder(
                 "ffmpeg",
@@ -40,6 +43,12 @@ final class VideoRecorder extends Thread {
                 "-hide_banner",
                 "-loglevel",
                 "warning",
+                "-probesize",
+                "32",
+                "-analyzeduration",
+                "0",
+                "-fpsprobesize",
+                "0",
                 "-use_wallclock_as_timestamps",
                 "1",
                 "-f",
@@ -136,7 +145,7 @@ final class VideoRecorder extends Thread {
       try {
         Files.writeString(
             Paths.get(target + ".txt"),
-            "Microscopio Color 1.1.1\nFecha: "
+            "Microscopio Color 1.1.2\nFecha: "
                 + OffsetDateTime.now()
                 + "\n"
                 + "Entrada RGB24: 1280x720\n"

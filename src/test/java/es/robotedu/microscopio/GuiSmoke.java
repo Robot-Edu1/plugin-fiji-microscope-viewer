@@ -30,7 +30,7 @@ public final class GuiSmoke {
     if (latest.get() == null) throw new AssertionError("No llegaron fotogramas sintéticos.");
     ImagePlus image = (ImagePlus) imageField.get(session);
     EventQueue.invokeAndWait(
-        () -> image.setTitle("PRUEBA SINTETICA - Microscopio Color 1.1.1 - RGB 1280x720"));
+        () -> image.setTitle("PRUEBA SINTETICA - Microscopio Color 1.1.2 - RGB 1280x720"));
     Method photo = CaptureSession.class.getDeclaredMethod("savePhoto"),
         video = CaptureSession.class.getDeclaredMethod("beginVideo");
     photo.setAccessible(true);

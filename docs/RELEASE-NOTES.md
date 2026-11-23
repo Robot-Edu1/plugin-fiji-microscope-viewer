@@ -1,3 +1,7 @@
+Microscopio Color 1.1.2 — plugin independiente para Fiji.
+
+Corrección del sondeo inicial de FFmpeg al grabar desde RGB por tubería, detectada en la validación remota Java 11 de la versión 1.1.1. Se conserva la prueba de duración.
+
 Plugin independiente Microscopio Color para Fiji.
 
 Fuentes Java y documentación bajo MIT, sin distribución de Fiji ni instalador del sistema. Captura RGB 1280×720, JPEG y MP4, con archivos por cuenta.

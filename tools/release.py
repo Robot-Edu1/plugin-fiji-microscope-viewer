@@ -12,7 +12,7 @@ import tarfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("--tag", required=True, help="Existing tag matching VERSION, e.g. v1.1.1")
+parser.add_argument("--tag", required=True, help="Existing tag matching VERSION, e.g. v1.1.2")
 args = parser.parse_args()
 version = (ROOT / "VERSION").read_text().strip()
 if not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", version) or args.tag != "v" + version:
