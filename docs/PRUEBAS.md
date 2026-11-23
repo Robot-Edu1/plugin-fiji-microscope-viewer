@@ -4,6 +4,7 @@ La compilación normal requiere únicamente recursos locales. Para compilar y pr
 
 ```sh
 make test IJ_JAR=/ruta/al/ij.jar
+IJ_JAR=/ruta/al/ij.jar python3 tools/test.py --slow-encoder
 ```
 
 Se prueban modos discretos de color, descarte de GREY, tamaño de fotograma, timeout de procesos, carpeta XDG con espacios, canales RGB, JPEG sin escalado, nombres únicos, MP4 y la entrada ImageJ estándar. El vídeo de prueba recibe barras RGB lentamente; se comprueba que su duración sea próxima al tiempo de envío. No abre cámaras reales.
@@ -28,3 +29,5 @@ Los workflows deben ejecutarse realmente en el repositorio de destino para acred
 ## Pendiente en LliureX
 
 Comprobar el microscopio físico, imagen en color, permisos preexistentes, cámara ocupada, cierre y reconexión, cuentas reales, grabación prolongada y poco espacio con el Fiji y el Java elegidos por LliureX. Sin esos resultados no se afirma validación institucional ni compatibilidad universal.
+
+La prueba `--slow-encoder` retrasa el arranque de FFmpeg 1,2 segundos. Comprueba el mismo umbral de duración; no relaja el test para ocultar lentitud del runner. La salida conserva tiempo mediante repeticiones registradas de la última imagen.

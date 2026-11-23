@@ -12,7 +12,7 @@
 
 Leer una cámara o finalizar un vídeo puede tardar. Esas operaciones se realizan fuera de AWT para no congelar los botones. El repintado usa una referencia al último fotograma y solo un evento pendiente: si la pantalla no sigue el ritmo se omiten repintados, sin acumular memoria.
 
-Las acciones de fotografía y arranque del vídeo se serializan en un ejecutor. Al cerrar, se espera a las acciones pendientes antes de finalizar el grabador. El vídeo tiene una cola de dos fotogramas: si FFmpeg va lento se contabilizan descartes en vez de crecer indefinidamente. Los tiempos de llegada se pasan al codificador, pero deben validarse también bajo carga prolongada.
+Las acciones de fotografía y arranque del vídeo se serializan en un ejecutor. Al cerrar, se espera a las acciones pendientes antes de finalizar el grabador. El vídeo tiene una cola de dos fotogramas: si FFmpeg va lento se contabilizan descartes en vez de crecer indefinidamente. Las marcas de llegada se toman en Java, antes de la cola. La salida tiene una tasa constante y repite la última imagen para conservar el tiempo cuando faltan cuadros. Las repeticiones y descartes se registran: no representan movimiento adquirido. Este mecanismo evita que un arranque lento del codificador acorte la duración.
 
 Los límites de espera evitan consultas o cierres bloqueados indefinidamente. Un corte de alimentación puede dejar un MP4 sin finalizar; esta implementación no promete recuperar archivos tras un cierre forzado del proceso o del sistema.
 

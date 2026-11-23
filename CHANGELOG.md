@@ -1,5 +1,12 @@
 # Historial de cambios
 
+## 1.1.3 — 2026-11-23
+
+- Sustituida la dependencia del reloj de lectura de FFmpeg por marcas temporales tomadas al recibir los fotogramas en Java. La salida de tasa constante repite el último cuadro cuando corresponde para conservar la duración, con registro de descartes y repeticiones.
+- Añadida prueba con arranque del codificador retrasado 1,2 segundos, manteniendo el umbral de duración.
+- La versión 1.1.2 no se distribuye: una ejecución adicional mostró que reducir el sondeo de FFmpeg no eliminaba la dependencia temporal de su arranque.
+
+
 ## 1.1.2 — 2026-11-23
 
 - Corrección del sondeo inicial de FFmpeg al grabar RGB por tubería. Las primeras pruebas remotas detectaron un vídeo más corto que el tiempo de envío; se desactiva la inferencia inicial de tasa y se limita el sondeo porque el formato ya está definido. Se mantiene la prueba de duración, sin relajar su umbral.

@@ -29,4 +29,6 @@ jobs:
       - name: Build and run synthetic tests
         env:
           IJ_JAR: ${{ github.workspace }}/.deps/ij-1.54p.jar
-        run: make test
+        run: |
+          make test
+          python3 tools/test.py --slow-encoder

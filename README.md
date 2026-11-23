@@ -2,7 +2,7 @@
 
 Repositorio: https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer
 
-Plugin de captura para microscopios USB en Linux, preparado para que LliureX incorpore el complemento a su propia distribución de Fiji. La versión de esta revisión es **1.1.2**; reorganiza y documenta el código entregado previamente como 1.1.0.
+Plugin de captura para microscopios USB en Linux, preparado para que LliureX incorpore el complemento a su propia distribución de Fiji. La versión de esta revisión es **1.1.3**; reorganiza y documenta el código entregado previamente como 1.1.0.
 
 El proyecto abre una imagen de color a **1280×720**, con botones para zoom, fotografía JPEG y vídeo MP4. La salida se guarda con fecha y hora en la carpeta de imágenes de la cuenta que ejecuta Fiji, dentro de `Microscopio`. El programa no interpola imágenes para simular una resolución mayor.
 
@@ -33,7 +33,7 @@ Sin Make:
 python3 tools/build.py --ij-jar /ruta/al/ij.jar
 ```
 
-Resultado: `dist/Microscopio_Color-1.1.2.jar`. El constructor no descarga ni instala nada; utiliza ImageJ solo para compilar. No hay un instalador privilegiado ni una copia de Fiji en el resultado.
+Resultado: `dist/Microscopio_Color-1.1.3.jar`. El constructor no descarga ni instala nada; utiliza ImageJ solo para compilar. No hay un instalador privilegiado ni una copia de Fiji en el resultado.
 
 ## Incorporarlo a Fiji y utilizarlo
 

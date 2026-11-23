@@ -11,7 +11,7 @@ El código fuente, la licencia MIT y las instrucciones de compilación están di
 https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer
 
 La primera versión publicada de esta revisión puede consultarse aquí:
-https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/releases/tag/v1.1.2
+https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/releases/tag/v1.1.3
 
 El repositorio contiene el código Java modular, comentarios sobre las decisiones de diseño, pruebas sintéticas, documentación de integración y los archivos de automatización. La Release incluye el JAR compilado, un tarball fuente versionado y sus sumas SHA-256. También proporcionamos una plantilla debian/watch para que podáis adaptarla al origen público y comprobar la detección de nuevas versiones con uscan.
 
