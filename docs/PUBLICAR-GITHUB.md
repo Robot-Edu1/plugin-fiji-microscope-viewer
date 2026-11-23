@@ -2,17 +2,17 @@
 
 Estado de esta preparación: proyecto local listo para revisión. Todavía no existe una URL pública confirmada ni una ejecución remota de los workflows. No enviar el correo de publicación hasta tener los enlaces y comprobarlos sin iniciar sesión.
 
-Nombre sugerido: `microscopio-color-fiji`. Versión inicial de esta revisión: `1.1.1`. La versión 1.1.0 anterior fue una entrega ZIP; no se reutiliza su número para cambiar archivos ya enviados.
+Nombre sugerido: `plugin-fiji-microscope-viewer`. Versión inicial de esta revisión: `1.1.1`. La versión 1.1.0 anterior fue una entrega ZIP; no se reutiliza su número para cambiar archivos ya enviados.
 
 ## Primera publicación desde este ordenador
 
 1. Entrar en la cuenta u organización de GitHub que deba alojar el proyecto.
-2. Crear un repositorio **Public** llamado `microscopio-color-fiji`. Crearlo vacío: este proyecto ya contiene README y licencia.
+2. El repositorio seleccionado es https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer. Para una publicación nueva, crear un repositorio **Public** llamado `plugin-fiji-microscope-viewer`. Crearlo vacío: este proyecto ya contiene README y licencia.
 3. Copiar la URL HTTPS o SSH que muestra GitHub. La autenticación se hace con la cuenta autorizada; no guardar tokens en el código ni en correos.
 4. Abrir terminal en la carpeta `MICROSCOPIO-COLOR-FIJI-GITHUB` y ejecutar, sustituyendo OWNER por la cuenta real:
 
 ```sh
-git remote add origin https://github.com/OWNER/microscopio-color-fiji.git
+git remote add origin https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer.git
 git push -u origin main
 ```
 

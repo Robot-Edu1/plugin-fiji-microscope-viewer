@@ -8,10 +8,10 @@ Hola, Marta:
 Gracias por la indicación. Compartimos la conveniencia de disponer de un origen público, versionado y accesible para facilitar la revisión y el empaquetado del plugin en LliureX, sin depender de nuevos envíos por correo.
 
 El código fuente, la licencia MIT y las instrucciones de compilación están disponibles en:
-[ENLACE REAL AL REPOSITORIO PÚBLICO]
+https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer
 
 La primera versión publicada de esta revisión puede consultarse aquí:
-[ENLACE REAL A LA RELEASE v1.1.1]
+https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/releases/tag/v1.1.1
 
 El repositorio contiene el código Java modular, comentarios sobre las decisiones de diseño, pruebas sintéticas, documentación de integración y los archivos de automatización. La Release incluye el JAR compilado, un tarball fuente versionado y sus sumas SHA-256. También proporcionamos una plantilla debian/watch para que podáis adaptarla al origen público y comprobar la detección de nuevas versiones con uscan.
 
