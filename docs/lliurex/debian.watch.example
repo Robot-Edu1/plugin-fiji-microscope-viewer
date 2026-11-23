@@ -1,0 +1,6 @@
+# Plantilla: sustituir OWNER y verificar con uscan tras publicar el repositorio.
+# Origen fuente, no el binario JAR. No forma un paquete Debian completo.
+version=4
+opts="searchmode=plain" \
+ https://api.github.com/repos/OWNER/microscopio-color-fiji/releases \
+ https://github.com/OWNER/microscopio-color-fiji/releases/download/v[0-9.]+/microscopio-color-fiji-([0-9]+\.[0-9]+\.[0-9]+)\.tar\.gz

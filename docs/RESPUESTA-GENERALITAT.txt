@@ -1,0 +1,33 @@
+BORRADOR PARA ENVIAR DESPUÉS DE PUBLICAR Y COMPROBAR LOS ENLACES
+Sustituir los campos entre corchetes. Este documento no se ha enviado.
+
+Asunto: Repositorio público y versiones del plugin Microscopio Color para Fiji
+
+Hola, Marta:
+
+Gracias por la indicación. Compartimos la conveniencia de disponer de un origen público, versionado y accesible para facilitar la revisión y el empaquetado del plugin en LliureX, sin depender de nuevos envíos por correo.
+
+El código fuente, la licencia MIT y las instrucciones de compilación están disponibles en:
+[ENLACE REAL AL REPOSITORIO PÚBLICO]
+
+La primera versión publicada de esta revisión puede consultarse aquí:
+[ENLACE REAL A LA RELEASE v1.1.1]
+
+El repositorio contiene el código Java modular, comentarios sobre las decisiones de diseño, pruebas sintéticas, documentación de integración y los archivos de automatización. La Release incluye el JAR compilado, un tarball fuente versionado y sus sumas SHA-256. También proporcionamos una plantilla debian/watch para que podáis adaptarla al origen público y comprobar la detección de nuevas versiones con uscan.
+
+El complemento sigue separado de Fiji y de las dependencias del sistema. El equipo de LliureX puede compilar desde las fuentes y continuar con su propio empaquetado. Se mantienen las limitaciones documentadas: captura 1280×720, sin acreditar 5 MP ni validación física nueva con el microscopio de destino.
+
+Queremos dejar claro el alcance del mantenimiento: Robot-Edu no asume mantenimiento gratuito, soporte continuado ni la adaptación automática a futuras versiones de Fiji. Si se nos solicita una corrección, mejora, integración o servicio, será necesario acordar presupuesto y condiciones y aceptarlos previamente.
+
+El proyecto queda disponible para que LliureX y la comunidad puedan mantenerlo, modificarlo y redistribuirlo, o crear un fork, conforme a la licencia MIT. Estas posibilidades no exigen contratar servicios con Robot-Edu. La participación comunitaria tampoco implica que exista un compromiso de atención o de resolución de incidencias por parte de terceros.
+
+La infraestructura preparada permite gestionar cambios mediante commits, etiquetas y Releases. Cada nueva publicación dependerá de que alguien mantenga y revise efectivamente el proyecto; no prometemos un calendario de actualizaciones.
+
+Quedamos disponibles en info@robot-edu.es para propuestas de colaboración o trabajos presupuestados que consideréis necesarios.
+
+Un saludo,
+Rafael Cantillana
+Robot-Edu.es · Ingenio Triana S.L.
+CIF/NIF: B-04984514
+info@robot-edu.es · 955 606 961
+https://robot-edu.es/
