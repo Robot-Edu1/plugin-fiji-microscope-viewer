@@ -53,9 +53,9 @@ Cada cuenta resuelve su carpeta con `xdg-user-dir PICTURES`. Si no existe, se bu
 make test IJ_JAR=/ruta/al/ij.jar
 ```
 
-Los tests generan sus propias barras de color y **no abren una cámara física**. El flujo de GitHub Actions está preparado para Java 11/21, pero sus ejecuciones remotas solo existirán después de subir el repositorio. [Pruebas y limitaciones](docs/PRUEBAS.md).
+Los tests generan sus propias barras de color y **no abren una cámara física**. GitHub Actions ejecuta las comprobaciones con Java 11/21. Los resultados se consultan en https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/actions. [Pruebas y limitaciones](docs/PRUEBAS.md).
 
-Las versiones se identifican mediante etiquetas `vX.Y.Z`. El flujo de publicación prepara un **borrador** de Release con JAR, fuentes `.tar.gz` y SHA-256; una persona revisa y publica el borrador. [Procedimiento de publicación](docs/PUBLICAR-GITHUB.md). No se anuncian una URL pública ni versiones publicadas hasta que existan realmente.
+Las versiones se identifican mediante etiquetas `vX.Y.Z`. El flujo de publicación prepara un **borrador** de Release con JAR, fuentes `.tar.gz` y SHA-256; una persona revisa y publica el borrador. [Procedimiento de publicación](docs/PUBLICAR-GITHUB.md). El código público está en este repositorio; las versiones descargables se consultan en https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/releases.
 
 ## Para quien quiera entender o cambiar el código
 

@@ -1,15 +1,19 @@
 # Publicar el repositorio y las versiones
 
-Estado de esta preparación: proyecto local listo para revisión. Todavía no existe una URL pública confirmada ni una ejecución remota de los workflows. No enviar el correo de publicación hasta tener los enlaces y comprobarlos sin iniciar sesión.
+Repositorio público: https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer.
+Releases: https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/releases.
+Pruebas remotas: https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer/actions.
 
-Nombre sugerido: `plugin-fiji-microscope-viewer`. Versión inicial de esta revisión: `1.1.1`. La versión 1.1.0 anterior fue una entrega ZIP; no se reutiliza su número para cambiar archivos ya enviados.
+Esta guía conserva los pasos de creación inicial como referencia. Para nuevas contribuciones se debe clonar el repositorio existente, no iniciar otro historial. Comprobar que la Release sea pública y descargable antes de anunciar una versión.
+
+Nombre del repositorio: `plugin-fiji-microscope-viewer`. Versión inicial de esta revisión: `1.1.1`. La versión 1.1.0 anterior fue una entrega ZIP; no se reutiliza su número para cambiar archivos ya enviados.
 
 ## Primera publicación desde este ordenador
 
 1. Entrar en la cuenta u organización de GitHub que deba alojar el proyecto.
 2. El repositorio seleccionado es https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer. Para una publicación nueva, crear un repositorio **Public** llamado `plugin-fiji-microscope-viewer`. Crearlo vacío: este proyecto ya contiene README y licencia.
 3. Copiar la URL HTTPS o SSH que muestra GitHub. La autenticación se hace con la cuenta autorizada; no guardar tokens en el código ni en correos.
-4. Abrir terminal en la carpeta `MICROSCOPIO-COLOR-FIJI-GITHUB` y ejecutar, sustituyendo OWNER por la cuenta real:
+4. Abrir terminal en la carpeta `MICROSCOPIO-COLOR-FIJI-GITHUB` y ejecutar con la URL real del repositorio:
 
 ```sh
 git remote add origin https://github.com/Robot-Edu1/plugin-fiji-microscope-viewer.git
@@ -39,7 +43,7 @@ git push origin v1.1.1
 3. El workflow **Prepare tagged release** vuelve a probar y crea un **borrador** con JAR, fuentes `.tar.gz` y SHA-256. Requiere GitHub Actions habilitado y permiso de escritura de contenido para ese job.
 4. Abrir Releases, revisar el borrador, su changelog y sus archivos. Publicarlo solo cuando se decida distribuirlo. No usar la etiqueta «estable validado en LliureX» sin esas pruebas físicas.
 5. Abrir sin sesión la URL del repositorio y la de la Release. Comprobar que las fuentes y los tres archivos se descargan.
-6. Sustituir OWNER en el ejemplo de watch y los enlaces pendientes en el borrador de correo. No quedan enlaces de cuenta inventados en el proyecto.
+6. El ejemplo watch y el borrador de correo ya apuntan a Robot-Edu1/plugin-fiji-microscope-viewer. Verificar la detección con uscan después de publicar la Release.
 
 Los borradores no son visibles para el público ni sirven todavía para `uscan`. Una vez publicada la Release, la API pública permite detectar las versiones y descargar el tarball fuente; el equipo de LliureX debe comprobar su plantilla watch con el repositorio real.
 
@@ -61,7 +65,7 @@ No se promete mantenimiento periódico. Cualquier persona con permisos del repos
 
 ## ImageJ Update Site
 
-No se ha creado uno en esta entrega. La integración solicitada usa el empaquetado de LliureX; mantener un segundo canal requeriría coordinar actualizaciones y responsables. El repositorio y las Releases son el canal previsto una vez publicados.
+No se ha creado uno en esta entrega. La integración solicitada usa el empaquetado de LliureX; mantener un segundo canal requeriría coordinar actualizaciones y responsables. El repositorio y las Releases son el canal de distribución previsto.
 
 Referencias oficiales:
 - https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
